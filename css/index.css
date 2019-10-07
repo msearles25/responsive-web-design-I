@@ -304,7 +304,7 @@ footer {
 
 @media (max-width: 800px) {
     body {
-        width: 100%;
+        width: 95%;
     }
     nav {
         display: flex;
@@ -324,27 +324,42 @@ footer {
     .rightPart {
         display: none;
     }
+    .mainSection button {
+        width: 20%;
+    }
     /* middle section */
 
     .middleArea {
         margin: 0 auto;
         /* width: 95%; */
     }
+    .topContent {
+        padding-left: 2%;
+    }
+    .features, .about {
+        padding-right: 2%;
+    }
+    .bottomContent {
+        padding-left: 2%;
+    }
+    .services, .products, .vision {
+        padding-right: 4%;
+    }
 
     /* contact */
 
     .contact {
-        margin: 0 auto;
+        margin-left: 2%;
         /* width: 100%; */
     }
 }
 
 
 @media (max-width: 500px) {
-   body{
-       width: 100%;
+   body {
+       width: 95%;
    }
-   nav{
+   nav {
        /* display: flex;
        align-items: center; */
    }
@@ -357,7 +372,7 @@ footer {
        flex-direction: column;
        /* align-items: center; */
    }
-   nav a{
+   nav a {
        width: 100%;
        justify-content: center;
        padding: 2%;
@@ -365,6 +380,31 @@ footer {
    }
    .servicesMainLink {
        border-top: 1px solid gray;
+   }
+
+   /* middle section */
+   .mainSection button {
+       width: 35%;
+   }
+   .topContent {
+       width: 95%;
+       display: flex;
+       flex-direction: column;
+   }
+   .features {
+       margin-bottom: 6%;
+       padding-right: 2%;
+   }
+   .about{
+       padding-right: 2%;
+   }
+   .bottomContent {
+       width: 100%;
+       flex-direction: column;
+   }
+   .services, .products, .vision {
+       width: 100%;
+       margin-bottom: 6%;
    }
 }
 /* responsive */
