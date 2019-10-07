@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 
 body{
 	margin: 0 auto;
-	width: 900px;
+	width: 65%;
 }
 nav {
 	display: flex;
@@ -81,17 +81,19 @@ nav {
 .links{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
 }
 .logo{
-	display: flex;
+    width: 80%;
+    display: flex;
 	align-items: center;
 }
 nav a{
 	color: grey;
 	opacity: 0.8;
     text-decoration: none;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -118,14 +120,12 @@ nav a{
 	justify-content: flex-end;
 }
 .codeSnip {
-	/* display: flex;
-	width: 45%;
-	justify-content: flex-end;
-	align-items: center; */
+	width: 100%;
 }
 .innovation {
 	font-size: 65px;
-	text-align: center;
+    text-align: center;
+    width: 100%;
 	/* width: 30%;
 	display: flex;
 	justify-content: flex-start;
@@ -137,7 +137,7 @@ nav a{
 	border-radius: 6px;
 	text-align: center; 
 	width:40%;
-	height: 10%;
+	height: 35px;
 	/* padding: 6px 45px;
 	width: 300x;
 	margin-left: 120px;
@@ -303,39 +303,68 @@ footer {
 /* responsive */
 
 @media (max-width: 800px) {
-	nav {
+    body {
+        width: 100%;
+    }
+    nav {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
-    .links {
-        width: 95%;
-    }
     .logo {
+        margin-left: 10%;
         margin-bottom: 20%;
     }
 
     /* header logos */
-
+    .leftPart{
+        width: 100%;
+    }
     .rightPart {
         display: none;
     }
-
     /* middle section */
 
     .middleArea {
         margin: 0 auto;
-        width: 95%;
+        /* width: 95%; */
     }
 
     /* contact */
 
     .contact {
         margin: 0 auto;
-        width: 95%;
+        /* width: 100%; */
     }
 }
 
-/* responsive */
 
+@media (max-width: 500px) {
+   body{
+       width: 100%;
+   }
+   nav{
+       /* display: flex;
+       align-items: center; */
+   }
+   .logo {
+       margin-bottom: 5%;
+   }
+   .links {
+       width:100%;
+       padding: 2%;
+       flex-direction: column;
+       /* align-items: center; */
+   }
+   nav a{
+       width: 100%;
+       justify-content: center;
+       padding: 2%;
+       border-bottom: 1px solid gray;
+   }
+   .servicesMainLink {
+       border-top: 1px solid gray;
+   }
+}
+/* responsive */
